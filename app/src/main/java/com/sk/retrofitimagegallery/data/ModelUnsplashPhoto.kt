@@ -1,4 +1,4 @@
-package com.sk.retrofitimagegallery
+package com.sk.retrofitimagegallery.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
@@ -7,8 +7,8 @@ import kotlinx.android.parcel.Parcelize
 data class ModelUnsplashPhoto(
     val id:String,
     val description:String?,
-    val urls:Unsplashphotourls,
-    val user:Unsplashuser
+    val urls: Unsplashphotourls,
+    val user: Unsplashuser
 ):Parcelable {
 
     @Parcelize
