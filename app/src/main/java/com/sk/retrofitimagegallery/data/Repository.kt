@@ -17,6 +17,6 @@ class Repository @Inject constructor(private val unsplashApi: UnsplashApi) {
                 enablePlaceholders = false
 
             ),
-            pagingSourceFactory = {Unsplashphoto(unsplashApi,query)}
+            pagingSourceFactory = {PagingPhoto(unsplashApi,query)}
         ).liveData
 }
